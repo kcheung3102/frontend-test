@@ -2,17 +2,19 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo-wrapper"></div>
+        <div class="logo-wrapper">
+            <img  class="image-header" src='/images/logo.png' alt='UI/UX logo' />
+        </div>
         <div class="menu-wrapper">
-            <nav>
-                <a href="/">Blog</a>
-                <a href="/">Contact</a>
-                <a href="/">More</a>
+            <nav class="nav-links">
+                <a  class='nav-box' href="/">Blog</a>
+                <a class='nav-box' href="/">Contact</a>
+                <a class='nav-box' href="/">More</a>
             </nav>
         </div>
     </header>
@@ -20,19 +22,20 @@
         <div class="outline-box box"></div>
         <div class="solid-box box"></div>
         <div class="diamond-box box"></div>
-        <div class="spinning-box box"></div>
-        <button>Make invisible</button>
+        <div id='spinning-box' class="spinning-box box"></div>
+        <button id='btn-spin' class='btn' onclick="toggleSpinner()">Pause</button>
     </section>
     <footer class="footer">
         <div class="footer-links">
             <ul>
                 <li>Blog</li>
                 <li>Contact Us</li>
-                <li>Email: test@quarant-8.com</li>
+                <li>Email:<a href="mailto:test@quadrant-8.com"> test@quarant-8.com</a></li>
                 <li>555-1234</li>
             </ul>
         </div>
     </footer>
 </body>
 
+<script src="main.js"></script>
 </html>

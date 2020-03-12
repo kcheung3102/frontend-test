@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/*Nav*/
+
+.header {
+    width: 100%;
+    background-color: whitesmoke;
+    height: 15vh;
+    
+}
+
+.logo-wrapper {
+    position: absolute;
+    padding-left: 20px;
+}
+
+.menu-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links {
+    margin-top: 25px;
+    padding-right: 20px;
+    justify-content: space-around;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    transform: scale(1.2,1.2);
+}
+
+.image-header {
+    width: 80px;
+    position: absolute;
+}
+
+.nav-box  {
+	min-width: 50px;
+	max-width: 100px;
+	margin: 1em;
+	padding: 1em 2em;
+    border: none;
+    color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+    -moz-osx-font-smoothing: grayscale;
+     border: 2px solid;
+}
+
+
+
+/*End of Nav*/
+
+/*Content Section*/
+
+.content {
+ display: flex;
+ justify-content: space-evenly;
+ padding: 20px;
+ margin-top: 20px;
+}
+
+.content .btn {
+   width: 50px;
+   border: 3px solid;
+   border-radius: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+
+
+.box:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: 2px 5px 15px rgba(0,0,2);
+}
+
+
+
+.outline-box {
+    border: 1px solid blue;
+}
+
+.solid-box {
+    background-color: red;
+}
+
+.diamond-box {
+    background-color: green;
+    -webkit-transform: rotate(45deg); /* Safari and Chrome */
+    -moz-transform: rotate(45deg);  /* Firefox */
+    -o-transform: rotate(45deg);    /* IE 9 */
+    -ms-transform: rotate(45deg);   /* Opera */
+    transform: rotate(45deg);
+}
+
+#spinning-box {
+    animation-name: spin;
+    opacity: 0.7;
+    background-color: rgba(105,100,100,0.8);
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+    animation-play-state: running;
+    -moz-animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+
+
+
+
+#spinning-box:hover{
+    box-shadow: 1px 5px 15px rgba(0,0,0,2);
+}
+
+@-moz-keyframes spin {
+    from { 
+        -moz-transform: rotate(0deg); 
+    }
+    to { 
+        -moz-transform: rotate(360deg); 
+    }
+}
+@-webkit-keyframes spin {
+    from { 
+        -webkit-transform: rotate(0deg); 
+    }
+    to { 
+        -webkit-transform: rotate(360deg); 
+    }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+/*End of Content Section */
+
+/********Footer*********/
+
+.footer{
+    background-color: whitesmoke;
+    min-height: 10vh;
+    margin-top: 21rem;
+}
+
+
+.footer-links ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center; 
+}
+
+.footer-links ul li {
+    margin: 20px;
+}
