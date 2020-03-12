@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    height:100%;
+}
+
 body {
+    height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 /*Nav*/
@@ -67,22 +72,29 @@ body {
 
 /*Content Section*/
 
+section {
+   height: 100%;
+}
+
 .content {
  display: flex;
  justify-content: space-evenly;
  padding: 20px;
- margin-top: 20px;
+ background-color: lightblue;
+ align-items: center;
 }
 
 .content .btn {
    width: 50px;
+   height: 50px;
    border: 3px solid;
    border-radius: 20px;
 }
 
+
 .box {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     transition: all 0.3s ease-in-out;
     border-radius: 5px;
 }
@@ -166,7 +178,6 @@ body {
 .footer{
     background-color: whitesmoke;
     min-height: 10vh;
-    margin-top: 21rem;
 }
 
 
